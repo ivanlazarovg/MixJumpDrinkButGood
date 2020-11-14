@@ -1,0 +1,4 @@
+Neat Whiskey=W;
+Whiskey with Ice=W1;
+Vodka=V;
+VodkaWithIce=V1
