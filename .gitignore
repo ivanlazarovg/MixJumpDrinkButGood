@@ -61,7 +61,3 @@ crashlytics-build.properties
 MixJumpDrinkGame/Temp/UnityLockfile
 MixJumpDrinkGame/Library/ArtifactDB
 MixJumpDrinkGame/Library/ArtifactDB
-MixJumpDrinkGame/Library/ArtifactDB
-*.json
-MixJumpDrinkGame/Library/SourceAssetDB
-*.log
