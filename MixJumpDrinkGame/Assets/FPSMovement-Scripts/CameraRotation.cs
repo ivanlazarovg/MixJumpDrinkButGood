@@ -9,12 +9,17 @@ public class CameraRotation : MonoBehaviour
     float headRotation = 0f;
     [SerializeField] float headRotationLimit = 90f;
 
-    void Start() {
+    void Start()
+    {
+
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+
     }
 
-    void Update() {
+    void Update()
+    {
+
         float x = Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
         float y = Input.GetAxis("Mouse Y") * sensitivity * Time.deltaTime * -1f;
 
@@ -23,6 +28,7 @@ public class CameraRotation : MonoBehaviour
         headRotation += y;
         headRotation = Mathf.Clamp(headRotation, -headRotationLimit, headRotationLimit);
         cam.localEulerAngles = new Vector3(headRotation, 0f, 0f);
+
     }
 
 }

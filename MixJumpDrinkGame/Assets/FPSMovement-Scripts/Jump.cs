@@ -9,14 +9,19 @@ public class Jump : MonoBehaviour
     [SerializeField] Transform groundChecker;
     [SerializeField] float checkRadius;
     [SerializeField] LayerMask groundLayer;
-    [SerializeField] float impulseforward;
+    [SerializeField] public float impulseforward;
     [SerializeField] float acceleration;
+    private Movement movement;
 
-    void Start() {
+    void Start()
+    {
         rb = GetComponent<Rigidbody>();
+        movement = GetComponent<Movement>();
     }
 
-    void FixedUpdate() {
+    void FixedUpdate()
+    {
+
         if (Input.GetKey(KeyCode.Space) && IsOnGround())
         {
             DoJump();
@@ -30,12 +35,16 @@ public class Jump : MonoBehaviour
         print(IsOnGround());
     }
 
-    public bool IsOnGround() {
+    public bool IsOnGround()
+    {
         Collider[] colliders = Physics.OverlapSphere(groundChecker.position, checkRadius, groundLayer);
-
-        if (colliders.Length > 0) {
+        
+        if (colliders.Length > 0)
+        {
             return true;
-        }else {
+        }
+        else
+        {
             return false;
         }
     }
@@ -45,5 +54,7 @@ public class Jump : MonoBehaviour
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         rb.AddForce(transform.forward * impulseforward, ForceMode.Impulse);
     }
+
+   
 
 }
