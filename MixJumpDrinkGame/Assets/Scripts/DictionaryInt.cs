@@ -7,7 +7,7 @@ public class DictionaryInt : MonoBehaviour
     [SerializeField] TextAsset text;
     public Dictionary<string, string> drinksList = new Dictionary<string, string>();
 
-    void Start()
+    void Awake()
     {
         string textSt = text.ToString();
         textSt = textSt.Replace("\n", "");

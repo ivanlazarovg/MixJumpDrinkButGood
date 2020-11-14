@@ -10,7 +10,7 @@ Material:
   m_Name: Liquid
   m_Shader: {fileID: 4800000, guid: d73a197aeeb98034399f439470e5b834, type: 3}
   m_ShaderKeywords: 
-  m_LightmapFlags: 0
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3000
@@ -60,7 +60,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 2, y: 0}
     - _TextureSample1:
-        m_Texture: {fileID: 2800000, guid: 302951faffe230848aa0d3df7bb70faa, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 0.1, y: 0.1}
         m_Offset: {x: 4.24, y: 0}
     - _texcoord:
@@ -76,15 +76,15 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Length: 0.21
+    - _Length: 0.93
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RefractAmount: 0.01
+    - _RefractAmount: 3.17
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _Speed: 1.3
+    - _Speed: 1
     - _SrcBlend: 1
     - _Tiling: 60.03
     - _TilingFoam: -15.1
@@ -92,11 +92,12 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     - __dirty: 0
-    - _transparency: 1.83
+    - _transparency: 2.08
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ColorCamp: {r: 0, g: 0, b: 0, a: 0}
-    - _ColorSolid: {r: 0.22347811, g: 0.5849056, b: 0.4175781, a: 0}
+    - _ColorSolid: {r: 0.11801351, g: 0.49056602, b: 0.41318837, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Min: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 0}
+    - _Min: {r: 0.5188679, g: 0.5188679, b: 0.5188679, a: 0}
+    - _sa: {r: 5.1, g: 1, b: 0.21, a: 0}
   m_BuildTextureStacks: []

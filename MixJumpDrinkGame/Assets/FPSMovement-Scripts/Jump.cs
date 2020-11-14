@@ -32,7 +32,6 @@ public class Jump : MonoBehaviour
             
         }
 
-        print(IsOnGround());
     }
 
     public bool IsOnGround()
